@@ -1,0 +1,23 @@
+---
+- name: Linux user management using Ansible
+  hosts: linux_servers
+  become: yes
+
+  vars:
+    username: devopsadmin
+
+  tasks:
+    - name: Create DevOps user
+      user:
+        name: "{{ username }}"
+        groups: wheel
+        shell: /bin/bash
+        state: present
+
+    - name: Configure passwordless sudo
+      copy:
+        dest: "/etc/sudoers.d/{{ username }}"
+        content: "{{ username }} ALL=(ALL) NOPASSWD:ALL"
+        owner: root
+        group: root
+        mode: '0440'
