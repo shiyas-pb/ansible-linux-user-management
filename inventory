@@ -1,0 +1,6 @@
+[linux_servers]
+localhost ansible_connection=local
+
+[db]
+host4
+host5
