@@ -1,3 +1,4 @@
 *.md linguist-documentation
 images/* linguist-vendored
 *.yml linguist-language=YAML
+inventory linguist-language=YAML
