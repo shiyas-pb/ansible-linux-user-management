@@ -1,6 +1,7 @@
 ##Ansible Linux User Management
 
 📌 Overview
+
 This repository contains a simple and practical Ansible playbook to automate Linux user management on one or more servers.
 
 ##The playbook:
