@@ -1,6 +1,5 @@
-[linux_servers]
-localhost ansible_connection=local
+[remote_servers]
+192.168.1.10 ansible_user=shiyas ansible_become=true 
 
-[db]
-host4
-host5
+[local_server]
+localhost ansible_connection=local
