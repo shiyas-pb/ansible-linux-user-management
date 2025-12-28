@@ -1,6 +1,6 @@
 ##Ansible Linux User Management
-📌 Overview
 
+📌 Overview
 This repository contains a simple and practical Ansible playbook to automate Linux user management on one or more servers.
 
 ##The playbook:
@@ -15,7 +15,8 @@ Ensures idempotent execution
 
 This project demonstrates core Ansible fundamentals commonly used in real-world DevOps and system administration tasks.
 
-##📁 Repository Structure
+📁 Repository Structure
+```bash
 ansible-linux-user-management/
 ├── images/
 │   └── user-management-output.png
@@ -24,6 +25,7 @@ ansible-linux-user-management/
 │   ├── user_setup.yml
 │   └── .dummy.yml
 └── README.md
+```
 
 ##File Details
 
@@ -40,6 +42,7 @@ Stores output screenshots for documentation
 Placeholder file to keep the directory tracked in Git
 
 ⚙️ Prerequisites
+
 Control Node
 
 Ansible installed
@@ -56,7 +59,7 @@ Python 3 installed
 
 sudo/root access
 
-##📜 Inventory Example
+📜 Inventory Example
 
 Edit the inventory file:
 
