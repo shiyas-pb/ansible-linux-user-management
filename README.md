@@ -31,15 +31,16 @@ ansible-linux-user-management/
 ##File Details
 
 playbooks/user_setup.yml
+
 Main Ansible playbook for Linux user creation and sudo configuration
 
-inventory
+inventory,
 Defines the target Linux hosts
 
-images/
+images/,
 Stores output screenshots for documentation
 
-.dummy.yml
+.dummy.yml,
 Placeholder file to keep the directory tracked in Git
 
 ⚙️ Prerequisites
@@ -65,10 +66,13 @@ sudo/root access
 Edit the inventory file:
 
 [linux_servers]
+
 192.168.1.10 ansible_user=shiyas ansible_become=true
 
 Local Execution (Testing)
+
 [linux_servers]
+
 localhost ansible_connection=local
 
 ▶️ Playbook Explanation
@@ -76,7 +80,9 @@ localhost ansible_connection=local
 Playbook: playbooks/user_setup.yml
 
 Variables Used
+
 vars:
+
   username: devopsadmin
 
 ##Tasks Performed
